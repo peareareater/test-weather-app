@@ -1,0 +1,129 @@
+@import 'constants';
+
+html {
+    height: 100%;
+}
+
+* {
+    font-family: 'Turret Road', cursive;
+    color: $text-color;
+}
+#app {
+    height: 100%;
+}
+h2,
+h3 {
+    text-align: center;
+}
+body {
+    height: 100%;
+    margin: 0 auto;
+
+    svg {
+        color: $text-color;
+    }
+    .loading-container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        .loading {
+            margin: 0 auto;
+        }
+    }
+    .header {
+        font-size: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 50px;
+        background: $base-color;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        color: $text-color;
+        padding: 10px;
+
+        .header-sector {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            flex: 1;
+        }
+        .search-input-container {
+            align-self: flex-end;
+            margin: 10px;
+
+            form {
+                position: relative;
+                svg {
+                    background: white;
+                    cursor: pointer;
+                    position: absolute;
+                    top: 7px;
+                    padding-right: 5px;
+                    width: 20px;
+                    height: 20px;
+                    border-bottom: 3px solid $text-color;
+                }
+                input {
+                    font-size: 18px;
+                    text-indent: 35px;
+                    height: 30px;
+                    width: 250px;
+                    outline: none;
+                    border: none;
+                }
+            }
+        }
+    }
+
+    .container {
+        height: 93vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .column {
+            overflow-y: auto;
+            flex: 1;
+            .column-content {
+                padding: 3px 10px;
+            }
+            .location {
+                flex: 1;
+                display: flex;
+                cursor: pointer;
+                .emojiFlag {
+                    margin: 0 15px;
+                }
+            }
+        }
+    }
+}
+.flex {
+    display: flex;
+}
+.between {
+    justify-content: space-between;
+}
+.button-shadow {
+    &:hover {
+        box-shadow: $button-box-shadow;
+    }
+}
+.content-wrapper {
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    svg {
+        cursor: pointer;
+        padding: 15px;
+        font-size: 27px;
+    }
+    .dragged {
+        opacity: 0.5;
+        cursor: move;
+    }
+}
+.map-container {
+    margin: -15px;
+}

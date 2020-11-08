@@ -1,0 +1,38 @@
+.add-exit-active {
+    opacity: 0.8;
+    transform: scale(0.95);
+    transition: opacity 100ms, transform 100ms;
+}
+
+.cant_be_added-exit-active {
+    animation: shake 1s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+.remove-exit-active {
+    opacity: 0;
+    transform: translate(80%);
+    transition: opacity 300ms, transform 300ms;
+}
+
+@keyframes shake {
+    10%,
+    90% {
+        transform: translate3d(-2px, 0, 0);
+    }
+
+    20%,
+    80% {
+        transform: translate3d(3px, 0, 0);
+    }
+
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-5px, 0, 0);
+    }
+
+    40%,
+    60% {
+        transform: translate3d(6px, 0, 0);
+    }
+}

@@ -1,0 +1,60 @@
+@import 'constants';
+
+.search-result-item {
+    display: flex;
+    padding: 5px 10px;
+    width: 100%;
+    .search-result-content {
+        width: 100%;
+    }
+    &:hover {
+        box-shadow: $button-box-shadow;
+    }
+    .weather {
+        display: flex;
+    }
+    .weather-stats {
+        display: flex;
+        justify-content: space-between;
+        .temperature {
+            display: flex;
+            span {
+                font-size: 6rem;
+            }
+            .celsius {
+                border-radius: 50%;
+                border: 3px solid $text-color;
+                width: 5px;
+                height: 5px;
+            }
+            .celsius-unit {
+                margin-left: 5px;
+                font-weight: 900;
+            }
+        }
+        .stats {
+            .stats-item {
+                display: flex;
+                justify-content: space-between;
+                span {
+                    font-size: 20px;
+                    margin: 5px;
+                }
+            }
+        }
+    }
+    .favourite-button {
+        height: fit-content;
+        svg {
+            cursor: pointer;
+            padding: 15px;
+            font-size: 27px;
+            path {
+                fill: yellow;
+            }
+            &:hover {
+                opacity: 0.4;
+            }
+        }
+    }
+}
