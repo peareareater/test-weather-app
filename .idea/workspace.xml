@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="441e78c9-fdc6-4c38-ac3f-5a283c1be9a7" name="Default Changelist" comment="" />
+    <list default="true" id="441e78c9-fdc6-4c38-ac3f-5a283c1be9a7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/RecentResults.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/RecentResults.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/SearchResultItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/SearchResultItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/styles/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/styles/search-result.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/styles/search-result.scss" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,6 +26,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1jua8nzVNpRPJ6XU3HbgwY3428u" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -29,7 +38,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/src/styles" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="Sass" />
     <property name="prettierjs.PrettierConfiguration.Package" value="/usr/local/lib/node_modules/prettier" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/server/node_modules/typescript/lib" />
@@ -56,6 +65,9 @@
       <updated>1604656273486</updated>
       <workItem from="1604656274752" duration="7238000" />
       <workItem from="1604697536253" duration="46915000" />
+      <workItem from="1604843576864" duration="77000" />
+      <workItem from="1604843810721" duration="207000" />
+      <workItem from="1604846510987" duration="3615000" />
     </task>
     <servers />
   </component>
@@ -83,17 +95,17 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="172" y="127" width="1648" height="853" key="com.intellij.history.integration.ui.views.FileHistoryDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1604840727451" />
-    <state x="1004" y="80" width="916" height="1000" key="find.popup" timestamp="1604840978327">
+    <state x="1004" y="80" width="916" height="1000" key="find.popup" timestamp="1604851803798">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="1004" y="80" width="916" height="1000" key="find.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1604840978327" />
+    <state x="1004" y="80" width="916" height="1000" key="find.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1604851803798" />
     <state x="660" y="252" key="run.anything.popup" timestamp="1604796791834">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="660" y="252" key="run.anything.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1604796791834" />
-    <state x="659" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1604796948544">
+    <state x="659" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1604851975302">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="659" y="259" width="672" height="678" key="search.everywhere.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1604796948544" />
+    <state x="659" y="259" width="672" height="678" key="search.everywhere.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1604851975302" />
   </component>
 </project>

@@ -19,6 +19,7 @@ interface SearchResultItemProps {
     addToFavourites?: (searchResult: SearchResult) => boolean | void;
     removeFromFavourites?: (name: string) => boolean | void;
     style?: any;
+    isFavourite?: boolean;
 }
 const ANIMATION_TIMEOUT = 300;
 export const SearchResultItem: FC<SearchResultItemProps> = ({
@@ -26,6 +27,7 @@ export const SearchResultItem: FC<SearchResultItemProps> = ({
     addToFavourites,
     removeFromFavourites,
     style,
+    isFavourite,
 }) => {
     const [transition, setTransition] = useState(null);
     const [transitionClassName, setTransitionClassName] = useState('');
@@ -73,7 +75,7 @@ export const SearchResultItem: FC<SearchResultItemProps> = ({
                                 ))}
                         </div>
                         {addToFavourites && (
-                            <div className="favourite-button" title="Add to favourites">
+                            <div className={`favourite-button ${isFavourite ? 'active' : ''}`} title="Add to favourites">
                                 <FontAwesomeIcon icon={faStar} onClick={addToFavouritesWithTr} />
                             </div>
                         )}

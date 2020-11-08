@@ -5,7 +5,7 @@ import { SearchResultItem } from './SearchResultItem';
 interface RecentResultsComponentProps {
     recentResults: SearchResult[];
     searchCity: (coord: Coord) => void;
-    favouriteCities:string[];
+    favouriteCities: string[];
     addToFavourites: (searchResult: SearchResult) => void;
 }
 export const RecentResultsComponent: FC<RecentResultsComponentProps> = ({
@@ -13,8 +13,9 @@ export const RecentResultsComponent: FC<RecentResultsComponentProps> = ({
     addToFavourites,
     favouriteCities,
 }) => {
+    const isFavourite = (name: string) => !!favouriteCities.find((i) => i === name);
     const addToFavouritesWithCheck = (searchResult: SearchResult) => {
-        if (!favouriteCities.find((i) => i === searchResult.name)) {
+        if (!isFavourite(searchResult.name)) {
             addToFavourites(searchResult);
             return true;
         }
@@ -24,7 +25,11 @@ export const RecentResultsComponent: FC<RecentResultsComponentProps> = ({
         <div className="column">
             {recentResults.map((r, i) => (
                 <div key={`recent-${r.name}-${i}`} className={`content-wrapper`}>
-                    <SearchResultItem searchResult={r} addToFavourites={addToFavouritesWithCheck} />
+                    <SearchResultItem
+                        searchResult={r}
+                        addToFavourites={addToFavouritesWithCheck}
+                        isFavourite={isFavourite(r.name)}
+                    />
                 </div>
             ))}
         </div>

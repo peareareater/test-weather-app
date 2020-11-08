@@ -49,11 +49,16 @@
             cursor: pointer;
             padding: 15px;
             font-size: 27px;
-            path {
-                fill: yellow;
-            }
+
             &:hover {
                 opacity: 0.4;
+            }
+        }
+        &.active {
+            svg {
+                path {
+                    fill: orangered !important;
+                }
             }
         }
     }
